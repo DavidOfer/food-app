@@ -2,7 +2,7 @@
 import HeaderContainer from "./Header/HeaderContainer/HeaderContainer"
 import MainHeader from "./Header/MainHeader.styled.ts/MainHeader";
 import SubHeader from "./Header/SubHeader/SubHeader";
-import Restaurant from "../pages/Restaurant/Restaurant/Restaurant";
+import Restaurant from "../pages/Restaurant/Restaurant"
 
 
 

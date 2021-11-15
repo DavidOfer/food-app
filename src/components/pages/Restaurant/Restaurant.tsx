@@ -1,10 +1,10 @@
-import Menu from "../../../Menu/Menu";
+
 import { StyledRestaurant, StyledResturantBanner,StyledSmallLogo } from "./Restaurant.styled";
-import {dummy_resturant} from '../../../../dummyData';
 import { useEffect} from "react";
-import { useTypedSelector } from "../../../../hooks/useTypedSelector";
 import { useDispatch } from "react-redux";
-import { actionCreators } from "../../../../state";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
+import { actionCreators } from "../../../state";
+import Menu from "../../Menu/Menu";
 
 
 const Resturant: React.FC = () => {
@@ -26,7 +26,7 @@ const Resturant: React.FC = () => {
             {error && <h3>THERE IS AN ERROR {error} </h3>}
             {loading && <h3>PAGE IS LOADING </h3>}
             <StyledResturantBanner img={data?.banner} />
-            <StyledSmallLogo img={dummy_resturant.logo}/>
+            <StyledSmallLogo img={data?.logo}/>
             <div className="PlaceHolderContainer">
                 <div>
                     <div>
