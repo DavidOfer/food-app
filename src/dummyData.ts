@@ -1,6 +1,6 @@
 
 export const dummy_resturant = {
-    name: "המסעדה של ג'מיל",
+    name: "המקום של ציונה",
     type: "ים תיכוני",
     deliveryCost: 50,
     minOrder: 550,
@@ -11,8 +11,8 @@ export const dummy_resturant = {
     dishes:
         [{
             id: 0,
-            title: "קבב חתול",
-            description: "קבב חתול בפיתה, בתיבול רומני",
+            title: "קבב",
+            description: "קבב בפיתה, בתיבול רומני",
             category: "ikariot",
             cost: 52,
             img:"https://files.mishloha.co.il/files/menu_food_pic/FIL_248132_637484034736406780.jpg?v=2"
