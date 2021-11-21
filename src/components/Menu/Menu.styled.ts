@@ -6,15 +6,33 @@ export const StyledMenu = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 1300px;
-  border: 1px solid;
   justify-content: space-between;
-  /* position: relative; */
+  position: relative;
   .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    width: 66%;
+    width: calc(66.3333%);
+  }
+  .cartContainer {
+    background-color: inherit;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    width: calc(33.3333%);
+    padding: 10px;
+    top: 148px;
+    display: block;
+    position: sticky;
+    align-self: flex-start;
+    z-index: 10;
+  }
+  .foodSection{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width:100%;
   }
 
   @media (max-width: 1300px) {

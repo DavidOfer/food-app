@@ -16,4 +16,7 @@ export const StyledSubHeader = styled.div`
   .subHeaderField{
     height:32px;
   }
+  @media (max-width: 1300px) {
+    padding:20px 15px;
+  }
 `;

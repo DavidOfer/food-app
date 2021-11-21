@@ -1,4 +1,14 @@
 
+
+export const dummy_cart = {
+    items:[{
+        
+    }],
+    totalItemCount:3,
+    totalPrice:225,
+    //deliveryCost:10 can get this from selector
+}
+
 export const dummy_resturant = {
     name: "המקום של ציונה",
     type: "ים תיכוני",

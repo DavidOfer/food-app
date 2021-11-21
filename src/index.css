@@ -5,9 +5,10 @@
   direction: rtl;
 }
 html, body, button, input, select, textarea {
-  font-family: TakeawaySans, "Segoe UI", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 14px;
   line-height: 26px;
+  color:#1f2d42;
   text-rendering: optimizelegibility;
 }
 a{

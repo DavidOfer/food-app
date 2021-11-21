@@ -9,16 +9,44 @@ export const StyledRestaurant = styled.section`
   padding-top: 122px;
   align-items: center;
   background-color: rgb(240, 240, 240);
-  .PlaceHolderContainer {
-    display: flex;
-    flex-direction: column;
+  .restaurantInfo{
     width: 100%;
-    max-width: 1300px;
-    background-color: orange;
-    border:1px solid;
-    /* position: relative; */
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+  .title{
+    font-weight: 600;
+    font-family:"Segoe UI", sans-serif;
+  }
+  .starIcon{
+    color: rgb(255,128,0);
+    font-size: 14px;
+  }
+  .recommended{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .recText{
+      margin-right: 2px;
+    }
+  }
+  .StickyCate {
+    display: block;
+    position: sticky;
+    z-index: 10;
+    top: 122px;
+  }
+`;
+
+export const ResturantContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  background-color: inherit;
+  /* border: 1px solid; */
 `;
 
 interface LogoProps {
@@ -43,6 +71,6 @@ export const StyledSmallLogo = styled.div<LogoProps>`
   width: 130px;
   height: 130px;
   display: flex;
-  border:4px solid white;
+  border: 4px solid white;
   border-radius: 50%;
 `;

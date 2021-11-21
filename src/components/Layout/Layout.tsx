@@ -1,8 +1,9 @@
 
 import HeaderContainer from "./Header/HeaderContainer/HeaderContainer"
-import MainHeader from "./Header/MainHeader.styled.ts/MainHeader";
 import SubHeader from "./Header/SubHeader/SubHeader";
 import Restaurant from "../pages/Restaurant/Restaurant"
+import { Route, Switch } from "react-router";
+import MainHeader from "./Header/MainHeader/MainHeader";
 
 
 
@@ -13,10 +14,17 @@ const Layout: React.FC = () => {
                 <MainHeader />
                 <SubHeader />
             </HeaderContainer>
-            <div>
+            <Switch>
+                <Route path='/' exact>
+                    <Restaurant />
+                </Route>
                 <Restaurant />
-            </div>
+            </Switch>
+            <footer style={{height:"700px",background:"blue"}}>
+
+            </footer>
         </>
+
     );
 }
 export default Layout;
