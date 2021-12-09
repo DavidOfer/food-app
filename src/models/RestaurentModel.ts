@@ -1,4 +1,5 @@
 import { FoodGroupModel } from "./FoodGroupModel";
+import { ReviewModel } from "./ReviewModel";
 
 export interface RestaurentModel{
     id:number;
@@ -11,4 +12,7 @@ export interface RestaurentModel{
     banner:string;
     logo:string;
     foodGroups:FoodGroupModel[]
+    rating:number;
+    reviewCount:number;
+    reviews:ReviewModel[];
 }

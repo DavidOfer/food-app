@@ -8,6 +8,7 @@ import Cart from "../Cart/Cart";
 
 interface MenuProps {
     foodGroups: FoodGroupModel[] | undefined
+
 }
 const Menu: React.FC<MenuProps> = (props) => {
     return (
@@ -29,4 +30,4 @@ const Menu: React.FC<MenuProps> = (props) => {
 
     );
 }
-export default Menu;
+export default React.memo(Menu);

@@ -13,7 +13,7 @@ const Billing: React.FC<BillingProps> = (props) => {
                     סך מחיר הפריטים
                 </div>
                 <div>
-                    {props.ItemTotalCost}
+                    {props.ItemTotalCost} ₪
                 </div>
             </StyledCartItemContainer>
             <StyledCartItemContainer>
@@ -21,7 +21,7 @@ const Billing: React.FC<BillingProps> = (props) => {
                     דמי משלוח
                 </div>
                 <div>
-                    {props.deliveryCost}
+                    {props.deliveryCost} ₪
                 </div>
             </StyledCartItemContainer>
             <StyledCartFinalTotal>
@@ -29,7 +29,7 @@ const Billing: React.FC<BillingProps> = (props) => {
                     סך כל ההזמנה
                 </div>
                 <div>
-                    {props.FinalTotalCost}
+                    {props.FinalTotalCost} ₪
                 </div>
             </StyledCartFinalTotal>
         </StyledBilling>

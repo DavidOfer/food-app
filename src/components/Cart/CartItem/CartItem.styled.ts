@@ -25,6 +25,7 @@ export const StyledCartItem = styled.div`
 
   }
   .dishNameCost{
+    min-width: 80%;
     display:flex;
   }
   .dishCost{

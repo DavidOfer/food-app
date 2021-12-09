@@ -33,9 +33,14 @@ export const StyledMenuItem = styled.div`
     max-height: 80px;
     overflow: hidden;
     /* text-align: ; */
+    .description{
+      color:rgb(102, 102, 102);
+    }
   }
+  
   .itemTitle{
     margin-bottom: 5px;
+    font-weight: bold;
   }
 
   @media (max-width: 1000px) {

@@ -28,12 +28,12 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
                         <div className="itemTitle">
                             {props.dish.title}
                         </div>
-                        <div>
+                        <div className="description">
                             {props.dish.description}
                         </div>
                     </div>
                     <div>
-                        {props.dish.cost}
+                        {props.dish.cost} ₪
                     </div>
                 </div>
                 <StyledItemImage img={props.dish.img} />

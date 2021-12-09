@@ -29,12 +29,12 @@ const CartItem: React.FC<CartItemProps> = (props) => {
                         {props.item.amount}
                         <Button onClick={addItemHandler}>+</Button>
                     </div>
-                    <div>
+                    <div className="title">
                         {props.item.title}
                     </div>
                 </div>
                 <div>
-                    {props.item.totalCost}
+                    {props.item.totalCost} ₪
                 </div>
                 <div className="removeContainer">
                     <div className="removeText" onClick={removeAllItemHandler}>

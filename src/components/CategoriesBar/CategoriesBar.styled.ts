@@ -10,7 +10,7 @@ export const StyledCategoriesBar = styled.section<CategoriesBarProps>`
   background-color: white;
   border-top: 1px rgb(230,230,245) solid;
   position: sticky;
-  z-index: 10;
+  z-index: 11;
   top: 122px;
   align-items:center;
   ${({ $shadow }) => $shadow && `

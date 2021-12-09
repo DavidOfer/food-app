@@ -1,19 +1,23 @@
-import { Button } from "@mui/material";
+
+import React from "react";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
-import { StyledCart } from "../Cart/Cart.styled";
+import { StyledCart, StyledCartButton } from "../Cart/Cart.styled";
 import Billing from "./Billing/Billing";
 import CartItem from "./CartItem/CartItem";
+
 const Cart: React.FC = () => {
     const cart = useTypedSelector((state) => state.cart);
     const totalCost = cart.itemTotalCost;
+    const isDisabled= cart.itemCount === 0;
     const deliveryCost = useTypedSelector((state) => state.shop.data?.deliveryCost);
     const finalTotalCost = deliveryCost ? totalCost + deliveryCost : undefined;
+    console.log('cart render');
     return (
         <StyledCart>
             <div style={{ padding: "10px", width: "100%" }}>
-                <Button variant="contained" sx={{ width: "100%", height: "45px" }}>
+                <StyledCartButton variant="contained" disabled={isDisabled}>
                     תשלום
-                </Button>
+                </StyledCartButton>
             </div>
             {cart.itemCount === 0 ?
                 <div style={{textAlign:"center"}}>העגלה ריקה</div> :
@@ -27,4 +31,4 @@ const Cart: React.FC = () => {
         </StyledCart>
     );
 }
-export default Cart;
+export default React.memo(Cart);

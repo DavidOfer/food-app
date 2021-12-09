@@ -7,6 +7,7 @@ export const StyledRestaurant = styled.section`
   display: flex;
   flex-direction: column;
   padding-top: 122px;
+  padding-bottom:15px;
   align-items: center;
   background-color: rgb(240, 240, 240);
   .restaurantInfo{
@@ -29,6 +30,7 @@ export const StyledRestaurant = styled.section`
     flex-direction: row;
     align-items: center;
     .recText{
+      cursor: pointer;
       margin-right: 2px;
     }
   }
@@ -38,6 +40,17 @@ export const StyledRestaurant = styled.section`
     z-index: 10;
     top: 122px;
   }
+
+  /* .reviews{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 80px;
+    direction: ltr;
+  } */
 `;
 
 export const ResturantContentContainer = styled.div`
