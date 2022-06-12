@@ -1,4 +1,4 @@
 # Food app
 
-A food ordering application featuring cart state managment using redux
+A food ordering application featuring state managment using redux
 
